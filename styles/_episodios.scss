@@ -1,0 +1,72 @@
+* {
+
+    border: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 100%;
+    height: 232px;
+    border: none;
+}
+
+#episodios {
+    background-image: $bg-gradient;
+    height: 1223.5px;
+    width: 100%;
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    
+}
+
+.h3episodios {
+    font-family: $f-titulos;
+    font-size: $size-titulos;
+    line-height: $line-titulos;
+    color: $color2;
+    font-weight: 500;
+    padding: 64px 147px 21px 16px;
+}
+
+iframe {
+    display: flex;
+    align-self: center;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    #episodios {
+        height: 1042.6px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 100px;
+        padding-right: 100px;
+        z-index: -1;
+        clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);
+    }
+    
+    .h3episodios {
+        font-size: $size-titulos2d;
+        line-height: $line-titulos2d;
+        padding-left: 100px;
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+
+    iframe {
+        display: flex;
+        align-self: center;
+        width: 50%;
+        padding-top: 0px;
+        margin-top: -500px;
+    }
+    
+
+}

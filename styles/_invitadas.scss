@@ -1,0 +1,57 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+#invitadas {
+    display: grid;
+    overflow: hidden;
+}
+
+.h3invitadas {
+    font-family: $f-titulos;
+    font-size: $size-titulos;
+    line-height: $line-titulos;
+    color: $color1;
+    font-weight: 500;
+    padding: 0px 147px 21px 16px;
+}
+
+.imagenes {
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+.imginvitadas {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 800px) {
+    #invitadas {
+        display: grid;
+        overflow: hidden;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    .h3invitadas {
+        font-size: $size-titulos2d;
+        line-height: $line-titulos2d;
+        padding-left: 200px;
+    }
+
+    .imagenes {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imginvitadas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
