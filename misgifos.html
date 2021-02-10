@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS - Mis GIFOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link id="estilos" rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" href="assets/logo-edit.svg">
+</head>
+<body>
+    <div id="agrandar"></div>
+    <div id="todo">
+    <header>
+        <div class="container" id="container">
+            <nav>
+                <a href="index.html"><img class="logoDesktop" id="logoD" src="assets/logo-edit.svg" alt="logo Desktop"/></a>
+                <a href="index.html"><img id="logo" src="assets/logo-mobile.svg" alt="logo"/></a>
+                    <button class="hamburger" id="hamburger">    
+                        <img id="menu" src="assets/burger.svg" alt="bar" class="hide" />
+                        <img id="menu_noc" src="assets/burger-modo-noct.svg" alt="bar" class="hideDiurno" />
+                    </button>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li ><a id="modo">Modo nocturno</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="misgifos.html">Mis GIFOS</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="crea.html" id="crearGif" class="crearGif">+</a></li>
+                    </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+    <main>
+        <div class="mainFG" id="mainFG">
+            <div class="like">
+                <img src="assets/icon-mis-gifos.svg" alt="Mis gifos" id="like">
+            </div>
+            <p class="tituloFG" id="tituloFG">Mis GIFOS</p>
+        </div>
+
+        <div id="sin_contenido">
+            <img src="assets/icon-mis-gifos-sin-contenido.svg" alt="Sin contenido" id="iconVacioG" class="favVacio">
+            <p class="tituloFG tituloVacio" id="tituloVacio">¡Anímate a crear tu primer GIFO!</p>
+        </div>
+
+        <div class="contieneFavs" id="misGifos"></div>
+    </main>
+
+
+
+   <!-- TRENDING SLIDER -->
+
+   <section id="trending">
+    <div class="trendingSlider">
+        <div class="tituloSlider">
+            <h2 id="h2">Trending GIFOS</h2>
+        </div>
+        <p class="subtituloSlider">Mira los últimos GIFOS de nuestra comunidad.</p>
+
+
+        <div class="slider" id="slider">
+            <button id="prev" class="prev" onclick="pasarSlider(-3)"></button>
+            <div class="sliderGifos" id="sliderGifos">
+
+
+            </div>
+            <button id="next" class="next" onclick="pasarSlider(3)"></button>
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <div class="social">
+        <p class="compartir">Compartir en:</p>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="p4">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    
+</div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/modo.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/ampliarGif.js"></script>
+    <script src="js/descargarGif.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/misGifos.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</body>
+</html>
