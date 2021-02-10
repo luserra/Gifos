@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.trendingSlider {
+  background-color: $color7;
+  margin-top: 5%;
+  padding-bottom: 15%;
+}
+
+.modoNocturno .trendingSlider {
+  background-color: $color10;
+}
+
+
+.tituloSlider {
+    text-align: center;
+    font-family: $font1;
+    font-weight: bold;
+   
+    color: $color3;
+    padding-top: 7%;
+  }
+
+#h2 {
+  font-size: $size3;
+}
+
+.modoNocturno .tituloSlider {
+    color: $color1;
+}
+
+  .subtituloSlider {
+    text-align: center;
+    font-family: $font2;
+    font-size: $size6;
+    color: $color2;
+    padding: 1% 0 5% 0;
+  }
+
+.modoNocturno .subtituloSlider {
+    color: $color1;
+}
+
+  .sliderGifos {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .slider {
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+    gap: 1%;
+    margin: 0 2% 0 2%;
+  }
+
+  .prev {
+    display: unset;
+    background-image: url(../assets/button-slider-left.svg);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .modoNocturno .prev {
+    background-image: url(../assets/left-noc.svg);
+  }
+
+  .modoNocturno .prev:hover {
+    background-image: url(../assets/left-noc-hover-01.svg);
+    background-repeat: no-repeat;
+  }
+
+  .next {
+    display: unset;
+    background-image: url(../assets/Button-Slider-right.svg);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    justify-self: end;
+    align-self: center;
+    margin-right: 30%;
+    cursor: pointer;
+  }
+
+  .next:focus {
+    outline: none;
+  }
+
+  .prev:focus {
+    outline: none;
+  }
+
+  .modoNocturno .next {
+    background-image: url(../assets/rigth-noc-si.svg);
+  }
+  
+  .modoNocturno .next:hover {
+    background-image: url(../assets/right-noc-hover-01.svg);
+  }
+
+  .prev:hover {
+    background-image: url(../assets/button-slider-left-hover.svg);
+  }
+  .next:hover {
+    background-image: url(../assets/Button-Slider-right-hover.svg);
+  }
+
+  .tarjetaGifo {
+    position: relative;
+    height: 275px;
+    width: 357px;
+  }
+
+  .hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 400;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $color3;
+  }
+
+  .tarjetaGifo:hover .hover {
+    opacity: 0.6;
+  }
+
+  
+  .gifoImg {
+    width: 100%;
+    height: 300px;
+    margin: unset;
+  }  
+
+  .textTrending {
+    margin-left: 5%;
+    color: $color1;
+    padding-top: 75%;
+  }
+
+
+@media (max-width: 767px) {
+
+.trendingSlider {
+    margin-top: 15%;
+  }
+
+.tituloSlider {
+    font-size: $size4;
+    line-height: 20px;
+  }
+
+  .subtituloSlider {
+    font-size: $size7;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .sliderGifos {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 5%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .slider {
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .tarjetaGifo {
+    height: 187px;
+  }
+
+  .gifoImg {
+    width: 243px;
+    height: 187px;
+  }
+
+  .hover {
+    display: none;
+  }
+
+.next {
+  width: 1px;
+  height: 1px;
+}
+
+.prev {
+  width: 1px;
+  height: 1px;
+}
+
+}

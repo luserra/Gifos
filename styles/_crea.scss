@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.sec1 {
+    padding: 1% 6% 1% 6%;
+    display: grid;
+    grid-template-columns: 18% 60% 22%;
+    gap: 2%;
+    width: 1349px;
+}
+
+.camara {
+    align-self: center;
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+
+
+.ver {
+    visibility: visible;
+    margin-top: -100%;
+}
+
+.modoNocturno .ver {
+    visibility: hidden;
+}
+
+.verNoche {
+    visibility: hidden;
+    margin-top: 30%;
+}
+
+.modoNocturno .verNoche {
+    visibility: visible;
+    margin: 0;
+}
+
+.rectangulo {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $color3;
+    height: 390px;
+    width: 600px;
+    justify-self: center;
+    padding: 2%;
+    position: relative;
+  }
+
+.modoNocturno .rectangulo {
+    border: 1px solid $color1;
+}
+
+.supIzq {
+    border-top: 1px solid $color5;
+    border-left: 1px solid $color5;
+    height: 27px;
+    width: 25px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.supDer {
+    border-top: 1px solid $color5;
+    border-right: 1px solid $color5;
+    height: 27px;
+    width: 25px;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+
+.infIzq {
+    border-bottom: 1px solid $color5;
+    border-left: 1px solid $color5;
+    height: 27px;
+    width: 25px;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+}
+
+.infDer {
+    border-bottom: 1px solid $color5;
+    border-right: 1px solid $color5;
+    height: 27px;
+    width: 25px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+}
+
+.modoNocturno .supIzq {
+    border-top: 1px solid $color1;
+    border-left: 1px solid $color1;
+}
+
+.modoNocturno .supDer {
+    border-top: 1px solid $color1;
+    border-right: 1px solid $color1;
+}
+
+.modoNocturno .infDer {
+    border-bottom: 1px solid $color1;
+    border-right: 1px solid $color1;
+}
+
+.modoNocturno .infIzq {
+    border-bottom: 1px solid $color1;
+    border-left: 1px solid $color1;
+}
+
+.contieneTitCrea {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+}
+
+.tituloCrea {
+    font-family: $font1;
+    color: $color3;
+    font-size: $size3;
+    margin-top: 15%;
+}
+
+.modoNocturno .tituloCrea {
+    color: $color1;
+}
+
+.pasos {
+    font-family: $font2;
+    color: $color2;
+    line-height: 29px;
+    font-size: $size7;
+    padding: 3px 0 130px 0;
+}
+
+.modoNocturno .pasos {
+    color: $color1;
+}
+
+.cam {
+    align-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 85%;
+    justify-content: center;
+    display: none;
+}
+
+  .cam > video {
+    width: 100%;
+}
+
+  .cajaGif  {
+      position: relative;
+}
+
+  .gifListo {
+    display: none;
+    position: relative;
+    align-self: center;
+    width: 480px;
+    height: 100%;
+}
+
+  .hoverCrear {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+    opacity: 0.6;
+    transition: .5s ease;
+    background-color: $color3;
+}
+
+.contieneSubir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.btnSubir {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: none;
+}
+
+.descargarMig {
+    background-image: url(../assets/icon-download.svg);
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+.descargarMig:hover {
+    background-image: url(../assets/icon-download-hover.svg);
+}
+
+.linkMig {
+    background-image: url(../assets/icon-link-normal.svg);
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 6px;
+}  
+
+.linkMig:hover {
+    background-image: url(../assets/icon-link-hover.svg);
+
+}
+
+.iconoSubir {
+    align-self: center;
+}
+
+.iconoExito {
+    display: none;
+    align-self: center;
+}
+
+.tituloSubir {
+    align-self: center;
+    font-family: $font1;
+    font-weight: bold;
+    font-size: $size8;
+    color: $color1;
+}
+
+.tituloExito {
+    align-self: center;
+    font-family: $font1;
+    font-weight: bold;
+    font-size: $size8;
+    color: $color1;
+    display: none;
+}
+
+.rollo {
+    align-self: flex-end;
+}
+
+#pelicula {
+    width: 142px;
+    height: 89px;
+}
+
+.sec2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+
+.numeros {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+
+.num {
+    border: 1px solid $color3;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $color3;
+    font-size: $size6;
+    font-family: $font2;
+  }
+
+.modoNocturno .num {
+    border: 1px solid $color1;
+    color: $color1;
+}  
+
+.cuentaReg {
+    position: absolute;
+    right: 20%;
+    margin-top: 7px;
+    font-family: $font1;
+    color: $color3;
+    font-weight: bold;
+    display: none;
+  }
+
+.modoNocturno .cuentaReg {
+    color: $color1;
+}
+
+.repetir {
+    position: absolute;
+    right: 20%;
+    margin-top: 7px;
+    font-family: $font1;
+    color: $color3;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+  }
+
+.repetir:hover {
+    border-bottom: 2px solid $color3;
+  }
+
+.modoNocturno .repetir {
+    color: $color1;
+}
+
+.modoNocturno .repetir:hover {
+    border-bottom: 2px solid $color1;
+}
+
+.lineaCrear {
+    align-self: center;
+    width: 70%;
+    padding: 6px;
+    background-color: $color3;
+    margin-bottom: 1%;
+  }
+
+.modoNocturno .lineaCrear {
+    background-color: $color1;
+}
+
+.play {
+    align-self: center;
+    font-family: $font1;
+    font-size: $size10;
+    color: $color3;
+    border: 1px solid $color3;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 3%;
+    cursor: pointer;
+  }
+
+.modoNocturno .play {
+    border: 1px solid $color1;
+    color: $color1;
+} 
+
+.fin {
+    align-self: center;
+    font-family: $font1;
+    font-size: $size10;
+    color: $color3;
+    border: 1px solid $color3;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10%;
+    display: none;
+    cursor: pointer;
+}
+
+.subir {
+    align-self: center;
+    font-family: $font1;
+    font-size: $size10;
+    color: $color3;
+    border: 1px solid $color3;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10%;
+    display: none;
+    cursor: pointer;
+}
+
+.grabar {
+    align-self: center;
+    font-family: $font1;
+    font-size: $size10;
+    color: $color3;
+    border: 1px solid $color3;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10%;
+    display: none;
+    cursor: pointer;
+}
+
+.modoNocturno .grabar {
+    border: 1px solid $color1;
+    color: $color1;
+}
+
+.modoNocturno .subir {
+    border: 1px solid $color1;
+    color: $color1;
+} 
+
+.modoNocturno .fin {
+    border: 1px solid $color1;
+    color: $color1;
+} 
+
+.play:hover, .grabar:hover, .fin:hover, .subir:hover {
+    background-color: $color3;
+    color: $color1;
+}
+
+.modoNocturno .play:hover, .modoNocturno .grabar:hover, .modoNocturno .fin:hover, .modoNocturno .subir:hover {
+    background-color: $color1;
+    color: $color2;
+}
+
+.gifograbado {
+    display: none;
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 480px;
+    height: 100%;
+  }
+
+.activeNum {
+    background-color: #572EE5;
+    color: $color1;
+  }
+
+.modoNocturno .activeNum {
+    background-color: $color1;
+    color: $color2;
+  }
+
+.containerGifo {
+    position: relative;
+}
+
+.addactive {
+    display: unset;
+    background-image: url(../assets/CTA-crear-gifo-active.svg);
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    border: none;
+  }

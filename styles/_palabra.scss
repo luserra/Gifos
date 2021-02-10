@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#palabraTrending {  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.palabraTrend {
+    font-weight: 100;
+    font-family: $font1;
+    font-size: $size7;
+    color: $color3;
+    line-height: 25px;
+    text-transform: capitalize;
+    background-color: $color1;
+    border: 0;
+}
+
+.modoNocturno .palabraTrend {
+    color: $color1;
+    background-color: $color9;
+}
+
+.tituloTrending {
+    margin-top: 5%;
+}
+
+.subtituloTrending {
+    font-weight: bold;
+    font-family: $font1;
+    font-size: $size6;
+    color: $color3;
+    text-align: center;
+}
+
+.modoNocturno .subtituloTrending {
+    color: $color1;
+}
+
+
+@media (max-width: 767px) {
+
+
+    .tituloTrending {
+        margin-top: 10%;
+    }
+    
+    .subtituloTrending {
+        font-size: $size7;
+        
+    }
+    
+    #palabraTrending {  
+        display: block;
+        justify-content: space-between;
+        margin: 0 10% 0 10%;
+    }
+    
+    .palabraTrend {
+        font-size: 14px;
+    }
+    
+
+}
