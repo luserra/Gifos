@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS - Crear Gifo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link id="estilos" rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" href="assets/logo-edit.svg">
+</head>
+<body>
+    <header>
+        <div class="container" id="container">
+            <nav>
+                <a href="index.html"><img class="logoDesktop" id="logoD" src="assets/logo-edit.svg" alt="logo Desktop"/></a>
+                <a href="index.html"><img id="logo" src="assets/logo-mobile.svg" alt="logo"/></a>
+      
+                    <ul class="nav-ul" id="nav-ul">
+                        <li ><a id="modo">Modo nocturno</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="favoritos.html">Favoritos</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="misgifos.html">Mis GIFOS</a></li>
+                        <li class="subrayado"></li>
+                        <li><a href="crea.html" id="crearGif" class="crearGif">+</a></li>
+                    </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main>
+        <div class="sec1">
+          <div class="camara">
+            <img src="assets/camara.svg" alt="camara" id="camara" class="ver">
+            <img src="assets/element-luz-camara.svg" alt="Luz Cámara" id="luz" class="ver">
+            <img src="assets/camara-modo-noc.svg" alt="camara nocturna" class="verNoche">
+            <img src="assets/element-luz-camara.svg" alt="Luz Cámara" id="luzNoche" class="verNoche">
+          </div>
+          
+          <div class="rectangulo">
+            <div class="supIzq"></div>
+            <div class="supDer"></div>
+            <div class="infIzq"></div>
+            <div class="infDer"></div>
+            <div class="contieneTitCrea" id="contieneTitCrea">
+                <h2 id="tituloCrea" class="tituloCrea">Aquí podrás<br/> crear tus propios <span id="palabraGifos">GIFOS</span></h2>
+              <h2 class="pasos" id="pasos">¡Crea tu GIFO en sólo 3 pasos!<br/> (sólo necesitas una cámara para grabar un
+                video)
+              </h2>
+    
+            </div>
+            <div class="cam" id="cam">
+              <video src=" " id="video"></video>
+              <div class="cajaGif">
+                <img src="" alt="Gif grabado" id="gifListo" class="gifListo">
+                <div class="hoverCrear" id="hoverCrear">
+                  <div class="contieneSubir">
+                    <div class="btnSubir" id="btnSubir">
+                    <button class="descargarMig" id="descargarMig"></button>
+                    <button class="linkMig" id="linkMig"></button>
+                  </div>
+                    <div class="iconoSubir" id="iconoSubir"> <img src="assets/loader.svg" alt="Cargando">
+                    </div>
+                    <div class="iconoExito" id="iconoExito"><img src="assets/check.svg" alt="Éxito"></div>
+                    <div class="tituloSubir" id="tituloSubir"> Estamos subiendo tu GIFO </div>
+                    <div class="tituloExito" id="tituloExito"> GIFO subido con exito </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rollo">
+            <img src="assets/pelicula.svg" alt="pelicula" id="pelicula"/>
+          </div>
+        </div>
+    
+    
+        <div class="sec2">
+          <div class="numeros">
+            <p id="1" class="num">1</p>
+            <p id="2" class="num">2</p>
+            <p id="3" class="num">3</p>
+    
+          </div>
+          
+            <p class="cuentaReg" id="cuentaReg" >
+              0:00:00
+            </p>
+          <p class="repetir" id="rep">Repetir Captura</p>
+          <div class="lineaCrear"></div>
+
+          <div class="play" id="play" onclick="getStreamAndRecord()">Comenzar</div>
+          <div class="grabar" id="grabar">Grabar</div>
+          <div class="fin" id="fin">Finalizar</div>
+          <div class="subir" id="subir">Subir GIFO</div>
+    
+    
+        </div>
+
+    </main>
+
+
+    <footer id="footer" class="footer">
+        <div class="social">
+        <p class="compartir">Compartir en:</p>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="p4">© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/modo.js"></script>
+    <script src="js/crea.js"></script>
+    <script src="js/descargarGif.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</body>
+</html>
