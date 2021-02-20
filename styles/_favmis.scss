@@ -1,0 +1,100 @@
+// FAVORITOS // MIS GIFOS
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.favoritos {
+    text-align: center;
+}
+
+.mainFG {
+    justify-content: center;
+    text-align: center;
+}
+
+.tituloFG {
+    font-family: $font1;
+    font-size: $size3;
+    color: $color3;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tituloVacio {
+    font-family: $font1;
+    color: $color5;
+    font-size: $size5;
+    line-height: 33px;
+    margin: 5% 33% 2% 33%;
+}
+
+.vacioMis {
+    font-family: $font1;
+    color: $color5;
+    font-size: $size5;
+    line-height: 33px;
+    margin: 15% 33% 2% 33%;
+}
+
+.modoNocturno .tituloFG {
+    color: $color1;
+}
+
+.like {
+    align-items: center;
+    height: 22px;
+}
+
+#sin_contenido {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.favVacio {
+    height: 150px;
+    width: 150px;
+}
+
+.favsImg {
+    margin: 2%;
+    gap: 2%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.erase {
+    background-image: url(../assets/icon-trash-normal.svg);
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .erase:hover {
+    background-image: url(../assets/icon-trash-hover.svg);
+  }
+
+@media (max-width: 767px) {
+.tituloFG {
+    font-size: $size4;
+}
+
+.favsImg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.tituloVacio {
+    font-size: $size7;
+    margin: 5% 20% 2% 20%;
+}
+
+}

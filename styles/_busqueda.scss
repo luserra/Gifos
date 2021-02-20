@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.busqueda {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30% 0 30%;
+    width: 550px;
+    border-radius: 20px;
+    border: 1px solid $color3;
+}
+
+.barraBuscar {
+    height: 45px;
+    display: flex;
+  }
+
+.modoNocturno .busqueda {
+    border: 1px solid $color1;
+    background-color: $color9;
+}
+
+#buscar {
+    background-color: transparent;
+    color: $color8;
+}
+
+.modoNocturno #buscar {
+    color: $color1;
+}
+
+.barraBuscar input {
+    height: 100%;
+    width: 90%;
+    border: 0;
+    text-align: center;
+    font-family: $font1;
+    color: $color2;
+    text-align: left;
+    margin-left: 20px;
+    order: 2;
+  }
+  
+.barraBuscar i {
+    display: none;
+    color: #9CAFC3;
+    order: 1;
+    margin: 2%;
+  }
+  
+.barraBuscar input:focus {
+    outline: none;
+  }
+  
+.barraBuscar input:focus ~ i {
+    display: inline;
+  }
+  
+.barraBuscar #btnBuscar {
+    order: 3;
+    border: 0;
+    cursor: pointer;
+    padding: 0 15px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+.modoNocturno #btnBuscar {
+  background-image: url(../assets/icon-search-mod-noc.svg);
+  background-repeat: no-repeat;
+  padding: 30px 8px;
+  margin-top: 15px;
+  border: 0;
+}
+
+.barraBuscar #btnCerrar {
+    display: none;
+    order: 3;
+    cursor: pointer;
+    margin-right: 15px;
+    width: 20px;
+  }
+
+.modoNocturno #btnCerrar {
+    background-image: url(../assets/close-modo-noct.svg);
+    background-repeat: no-repeat;
+    padding: 30px 8px;
+    margin-top: 15px;
+    border: 0;
+  } 
+
+#contieneSug {
+    position: relative;
+    width: 35%;
+    margin-top: 5px;
+    color: $color8;
+  }
+  
+#contieneSug li {
+    padding-left: 35px;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+#contieneSug .iconoSug {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+  
+#contieneSug .iconoSug i {
+    width: 2%;
+    margin-right: 5px;
+  }
+
+#resultado {
+    margin: 0px 25px;
+  }
+
+.tituloBusqueda {
+    margin-top: 2%;
+    font-family: $font1;
+    text-align: center;
+    color: $color3;
+    font-size: $size1;
+    padding: 0% 12%;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+.modoNocturno .tituloBusqueda {
+    color: $color1;
+}
+
+#imgsBusqueda {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+}
+
+.busquedaImg {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+.paginado {
+    width: 95%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.pag {
+    margin-left: 5%;
+    width: 34px;
+    height: 34px;
+    border: none;
+    color: $color8;
+    font-size: 16px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+  }
+
+.activePag {
+    margin-left: 5%;
+    width: 34px;
+    height: 34px;
+    border: none;
+    font-size: 16px;
+    background-color: $color3;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.modoNocturno .activePag {
+    background-color: $color1;
+    color: $color2;
+}
+
+.lineaBusqueda {
+    border-top: 1px solid $color8;
+    width: 480px;
+    margin: 5% 33% 2% 33%;
+}
+
+.lorem {
+    font-family: $font1;
+    font-size: $size2;
+    line-height: 30px;
+    color: $color3;
+    margin-bottom: 30%;
+    justify-content: center;
+}
+
+.imgVacia {
+    margin: 10% 0 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.intenta {
+    font-family: $font1;
+    font-size: $size5;
+    color: $color5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+}
+
+@media (max-width: 767px) {
+
+.busqueda {
+    width: 330px;
+    margin: 0 5% 0 5%;
+    background-color: $color1;
+    border: 1px solid $color3;
+}
+
+.barraBuscar {
+    height: 50px;
+    display: flex;
+  }
+
+.lineaBusqueda {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tituloBusqueda {
+    font-size: $size3;
+}
+
+#imgsBusqueda {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.paginado {
+    margin-top: 10%;
+  }
+
+.barraBuscar #btnBuscar {
+  width: 50px;
+}
+
+.barraBuscar #btnCerrar {
+  width: 20px;
+}
+
+
+}
