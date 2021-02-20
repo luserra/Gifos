@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+
+header {
+    border-top: 5px solid $color3;
+}
+
+#logo {
+    display: none;
+}
+
+.logoDesktop {
+    margin-left: 150px;
+    height: 60px;
+    width: 68px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin: 2% 5% 0 0;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.nav-ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    border-bottom: 2px solid transparent;
+    font-family: $font1;
+    font-weight: bold;
+    font-size: $size10;
+    text-transform: uppercase;
+    color: $color3;
+}
+
+.nav-ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid $color5;
+    cursor: pointer;
+}
+
+.nav-ul li a:active {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: $color8;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.nav-ul li a.crearGif {
+    border: 1px solid $color3;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: $font1;
+    font-weight: 100;
+    text-align: center;
+    padding: 15% 0 25% 0;
+    margin-left: 5%;
+}
+
+.nav-ul li a.crearGif:hover {
+    border: 1px solid $color8;
+    color: $color1;
+    background-color: $color8;
+}
+
+.nav-ul li a.crearGif:active {
+    color: $color1;
+    background-color: $color3;
+}
+
+.modoNocturno {
+    background-color: $color9;
+    cursor: pointer;
+    
+}
+
+.modoNocturno .nav-ul li a {
+    color: $color1;
+}
+
+.modoNocturno .nav-ul li a:active {
+    color: $color8;
+}
+.modoNocturno header {
+    border-top: 5px solid #000;
+}
+
+.modoNocturno .nav-ul li a.crearGif {
+    border: 1px solid $color1;
+}
+
+.modoNocturno .nav-ul li a.crearGif:hover {
+    border: 0;
+    background-color: $color1;
+    color: $color2;
+}
+
+.modoNocturno .nav-ul li a.crearGif:active {
+    border: 0;
+    background-color: $color8;
+    color: $color1;
+}
+
+
+@media (max-width: 767px) {
+    
+    header {
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+    }
+
+    #logo {
+    margin: 40% 0 0 -40vw;
+    display: block;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .hamburger {
+        padding: 8% 5% 0 0 ;
+        display: block;
+    }
+
+    .nav-ul {
+        display: none;
+        width: 100vw;
+        height: 80vh;
+        flex-direction: column;
+        background-color: $color4;
+        border: 0;
+        position: absolute;
+        top: 15%;
+        z-index: 10
+    }
+
+    .modoNocturno .nav-ul {
+        background-color: $color2;
+    }
+
+    .nav-ul li a {
+        color: #FFF;
+        text-transform: capitalize;
+        font-size: $size8;
+        line-height: 60px;
+    }   
+
+
+    .nav-ul.show {
+        display:flex;
+    }
+
+   
+    .subrayado {
+        border: 0.5px solid $color1;
+        width: 41px;
+        text-align: center;
+    }
+
+    .nav-ul li a:hover {
+        text-decoration: none;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #crearGif {
+        display: none;
+    }
+
+    .hide {
+        visibility: visible;
+       
+    }
+ 
+    .modoNocturno .hide {
+        visibility: hidden;
+    }
+
+    .hideDiurno {
+        visibility: hidden;
+    }
+
+    .modoNocturno .hideDiurno {
+        visibility: visible;
+        
+    }
+
+}
